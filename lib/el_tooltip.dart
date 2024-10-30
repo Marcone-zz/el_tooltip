@@ -275,7 +275,7 @@ class _ElTooltipState extends State<ElTooltip> with WidgetsBindingObserver {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => _toggleOverlay(context),
+      onLongPress: () => _toggleOverlay(context),
       child: widget.child,
     );
   }
